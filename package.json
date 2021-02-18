@@ -7,6 +7,7 @@
         "watch": "babel -w src/ -d dist/",
         "build": "babel src/ -d dist/",
         "serve": "babel -w src/ -d dist/app.js | nodemon --watch dist",
+        "start": "nodemon ./src/app.js --exec babel-node -e js",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [
@@ -25,6 +26,5 @@
         "express-graphql": "^0.12.0",
         "graphql": "^15.5.0",
         "nanoid": "^3.1.20"
-    },
-    "type": "module"
+    }
 }
