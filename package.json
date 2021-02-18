@@ -2,13 +2,17 @@
     "name": "graphiql",
     "version": "1.0.0",
     "description": "Graphql basics",
-    "main": "./src/app.js",
+    "main": "src/app.js",
     "scripts": {
         "watch": "babel -w src/ -d dist/",
         "build": "babel src/ -d dist/",
         "serve": "babel -w src/ -d dist/app.js | nodemon --watch dist",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
+    "keywords": [
+        "babel",
+        "es6"
+    ],
     "author": "Parth Padhiar",
     "license": "ISC",
     "devDependencies": {
@@ -17,11 +21,10 @@
         "babel-preset-env": "^1.7.0"
     },
     "dependencies": {
-        "@babel/cli": "^7.12.17",
-        "@babel/core": "^7.12.17",
-        "@babel/preset-env": "^7.12.17",
-        "@babel/runtime": "^7.12.17",
-        "express": "^4.17.1"
+        "express": "^4.17.1",
+        "express-graphql": "^0.12.0",
+        "graphql": "^15.5.0",
+        "nanoid": "^3.1.20"
     },
     "type": "module"
 }
